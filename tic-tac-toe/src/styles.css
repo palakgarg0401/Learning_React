@@ -71,12 +71,33 @@
     width: 34px;
   }
   
-  .board-row:after {
+  /* .board-row:after {
     clear: both;
     content: '';
     display: table;
+  } */
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 equal rows */
+    /* gap: 10px; Space between grid items */
+    width: 300px; /* Container width */
+    height: 300px; /* Container height */
+    background-color: lightgray;
   }
   
+  .square2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+  }
+  
+
   .status {
     margin-bottom: 10px;
   }
