@@ -10,11 +10,12 @@ function Profile() {
 //export deafult is a standard js syntax that tells that it is the main function of the file
 export default function Gallery() {
   return (
-    <div>
+    <section>
+      <h1>Doraemon</h1>
       {/* Gallery is a parent component, rendering each Profile as a “child” */}
       <Profile /> {/* React component always start with the capital letter */}
       <Profile />
       <Profile />
-    </div>
+    </section>
   )
 }
