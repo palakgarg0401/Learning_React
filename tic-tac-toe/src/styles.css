@@ -84,7 +84,7 @@
     /* gap: 10px; Space between grid items */
     width: 300px; /* Container width */
     height: 300px; /* Container height */
-    background-color: lightgray;
+    /* background-color: lightgray; */
   }
   
   .square2 {
