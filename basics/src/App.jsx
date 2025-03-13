@@ -19,6 +19,7 @@ export default function App() {
       {/* className -> class name for styling in css */}
       {/* {shinchan} -> reads the value of javascript variable */}
       <img className="shinchan" src={shinchan} alt={cartoon} />
+      <img src={shinchan} alt={cartoon} style={{ border: "2px solid black" }} /> {/* inline css is passed as object */}
     </>
   );
 }
