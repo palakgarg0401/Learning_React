@@ -1,7 +1,9 @@
 //Imports Gallery as a default import from Gallery.js
-import Gallery from "./Gallery";
+import Gallery from "./component/Gallery";
 //Imports Profile as a named import called Profile from Gallery.js
-import { Profile } from "./Gallery";
+import { Profile } from "./component/Gallery";
+
+import Conditional from "./component/Conditional";
 
 import "./styles.css";
 
@@ -19,7 +21,9 @@ export default function App() {
       {/* className -> class name for styling in css */}
       {/* {shinchan} -> reads the value of javascript variable */}
       <img className="shinchan" src={shinchan} alt={cartoon} />
-      <img src={shinchan} alt={cartoon} style={{ border: "2px solid black" }} /> {/* inline css is passed as object */}
+      <img src={shinchan} alt={cartoon} style={{ border: "5px solid black" }} /> {/* inline css is passed as object */}
+
+      <Conditional />
     </>
   );
 }
