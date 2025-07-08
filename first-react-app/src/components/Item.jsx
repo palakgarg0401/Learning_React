@@ -1,6 +1,10 @@
+import styles from './Item.module.css'
+
 const Item = ({ foodItem }) => {
     return(
-        <li className="list-group-item">{foodItem}</li>
+        <li className = {`${styles['kg-item']} list-group-items`}>
+            <span className = {styles['kg-span']}>{foodItem}</span>
+        </li>
     );
 }
 

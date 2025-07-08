@@ -4,6 +4,7 @@ import Hello from './Hello.jsx';
 import ErrorMessage from './components/ErrorMessage.jsx';
 import FoodItems from './components/FoodItems.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {  //functional component
 
@@ -15,7 +16,7 @@ function App() {  //functional component
     <br />
 
     {/* Map Mathod */}
-    <h2>Healthy Food</h2>
+    <h2 className='food-heading'>Healthy Food</h2>
     <ErrorMessage items = {foodItems}></ErrorMessage>
     <FoodItems items = {foodItems}></FoodItems>
     <br />
