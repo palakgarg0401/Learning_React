@@ -3,10 +3,6 @@ input {
     padding: 10px;
 }
 
-.items-container {
-    text-align: left;
-}
-
 .item-button {
     min-width: 80px;
 }
