@@ -3,6 +3,7 @@ import FoodItems from './components/FoodItems.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Container from './components/Container.jsx';
+import FoodInput from './components/FoodInput.jsx';
 
 function App() {  //functional component
 
@@ -12,6 +13,7 @@ function App() {  //functional component
   <Container>
     <h2 className='food-heading'>Healthy Food</h2>
     <ErrorMessage items = {foodItems}></ErrorMessage>
+    <FoodInput></FoodInput>
     <FoodItems items = {foodItems}></FoodItems>
   </Container>
 
