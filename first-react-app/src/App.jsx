@@ -9,11 +9,13 @@ function App() {  //functional component
 
   let foodItems = ['Dal', 'Green Vegetables', 'Roti', 'Salad', 'Milk'];
 
+  const handleOnChange = (event) => { console.log(event.target.value); }
+
   return ( <>
   <Container>
     <h2 className='food-heading'>Healthy Food</h2>
     <ErrorMessage items = {foodItems}></ErrorMessage>
-    <FoodInput></FoodInput>
+    <FoodInput handleOnChange={handleOnChange}></FoodInput>
     <FoodItems items = {foodItems}></FoodItems>
   </Container>
 
