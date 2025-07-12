@@ -1,31 +1,25 @@
-import Hello from './Hello.jsx';
-//import Button from './Button.jsx'
-// import Random from './Random.jsx';
 import ErrorMessage from './components/ErrorMessage.jsx';
 import FoodItems from './components/FoodItems.jsx';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Container from './components/Container.jsx';
 
 function App() {  //functional component
 
-    let foodItems = ['Dal', 'Green Vegetables', 'Roti', 'Salad', 'Milk'];
+  let foodItems = ['Dal', 'Green Vegetables', 'Roti', 'Salad', 'Milk'];
 
-    return <>
-    <h1>Hello World</h1>
-    <Hello></Hello>
-    <br />
-
-    {/* Map Mathod */}
+  return ( <>
+  <Container>
     <h2 className='food-heading'>Healthy Food</h2>
     <ErrorMessage items = {foodItems}></ErrorMessage>
     <FoodItems items = {foodItems}></FoodItems>
-    <br />
+  </Container>
 
-    {/* <Button></Button>
-    <Random></Random>
-    <Random></Random>
-    <Random></Random> */}
+  <Container>
+    <p>Above is the list of healthy food you should eat for your health and well being</p>
+  </Container>
   </>
+  );
 }
 
 export default App;
