@@ -26,3 +26,13 @@
   font-family: Arial, sans-serif;
   color: hsl(0, 0%, 30%);
 }
+
+/* external css */
+.button {
+  background-color: hsl(155, 80%, 65%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
