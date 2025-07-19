@@ -1,19 +1,15 @@
-// props -> read-only properties that are shared between components
-//          A parent component can send data to a child component
-//          <Component key = value />
-
-import Student from "./components/Student";
+import UserGreeting from "./components/UserGreeting";
 
 function App() {
   return (
     <>
-      <Student name="Palak" age={19} isStudent={true}/> {/* boolean don't display as it is  */}
-      <Student name="Yudhish" age={19} isStudent={true}/>
-      <Student name="Sunny" age={40} isStudent={false}/>
-      <Student />
-      <Student name="Erica" />
+      
+
+      <UserGreeting isLoggedIn={false} username="Palak" />
+      <UserGreeting isLoggedIn={true} username="Yudhish" />
+      <UserGreeting isLoggedIn={true} />
     </>
   );
 };
 
-export default App
+export default App;
